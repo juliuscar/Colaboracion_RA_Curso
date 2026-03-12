@@ -13,3 +13,29 @@ Children:
   Id: g=e3d83d231f2d103e731967cf70fed0d4
   Supertype: Screen
   ReferenceType: HasComponent
+  Children:
+  - Name: CircularGauge1
+    Type: CircularGauge
+    Children:
+    - Name: Value
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MinValue
+      Type: BaseDataVariableType
+      DataType: Float
+    - Name: MaxValue
+      Type: BaseDataVariableType
+      DataType: Float
+      Value: 100.0
+    - Name: WarningZones
+      Type: BaseObjectType
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 210.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 210.0
